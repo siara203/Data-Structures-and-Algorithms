@@ -9,11 +9,13 @@ public class Main {
         boolean exit = false;
 
         while (!exit) {
+            System.out.println("==============================================");
             System.out.println("Menu:");
             System.out.println("1: Send Message");
             System.out.println("2: Show All Messages");
             System.out.println("3: Exit");
             System.out.print("Enter your choice: ");
+
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -39,3 +41,5 @@ public class Main {
         scanner.close();
     }
 }
+
+

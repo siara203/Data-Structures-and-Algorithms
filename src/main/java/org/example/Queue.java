@@ -35,11 +35,4 @@ class Queue<T> {
         return front == null;
     }
 
-    public void displayAll() {
-        Node<T> current = front;
-        while (current != null) {
-            System.out.println("Message: " + current.data);
-            current = current.next;
-        }
-    }
 }

@@ -18,7 +18,6 @@ class MessageProcessor {
     }
 
     public void displayAllMessages() {
-        messageQueue.displayAll();
         messageStack.displayAll();
     }
 

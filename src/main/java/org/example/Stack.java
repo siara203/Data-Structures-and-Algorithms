@@ -28,9 +28,15 @@ class Stack<T> {
 
     public void displayAll() {
         Node<T> current = top;
+        StringBuilder message = new StringBuilder("Message All: ");
         while (current != null) {
-            System.out.println("Message All: " + current.data);
+            message.append(current.data).append(", ");
             current = current.next;
         }
+        if (message.length() > "Message All: ".length()) {
+            message.delete(message.length() - 2, message.length());
+        }
+        System.out.println(message.toString());
     }
+
 }
